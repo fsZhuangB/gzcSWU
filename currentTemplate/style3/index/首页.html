@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>${site.name}</title>
+<link media="all" type="text/css" rel="stylesheet" href="/${res}/css/reset.css" />
+<link media="all" type="text/css" rel="stylesheet" href="/${res}/css/base.css" />
+<script src="/${res}/js/jquery.min.js" type="text/javascript"></script>
+<script src="/${res}/js/site.js" type="text/javascript"></script>
+<script src="/${res}/js/s3Slider.js" type="text/javascript"></script>
+<script src="/${res}/js/jquery.soChange.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!--top-->
+[#include "../include/页头.html"/]
+<!--/top/-->
+
+<div class="main">
+<div style="margin:10px 0 0 0;"></div>
+     <div class="box">
+         <div class="col-left left-bar-2">
+           <ul>
+               <li><a href="http://sbgl.swu.edu.cn/sfw_zj_new/index.jsp"  target="_blank" class="left-bar-on" ><div class="icos"><img src="/${res}/images/left-1.png" /></div><div class="texts">资产管理系统</div><div class="bk"></div></a></li>
+               <li><a href="http://fcgl.swu.edu.cn:8080/archibus" target="_blank"><div class="icos"><img src="/${res}/images/left-6.png" /></div><div class="texts">房地产管理系统</div><div class="bk"></div></a></li>
+               <li><a href="javascript:;"><div class="icos"><img src="/${res}/images/left-5.png" /></div><div class="texts">住房公积金查询</div><div class="bk"></div></a></li>
+               <li><a href="javascript:;"><div class="icos"><img src="/${res}/images/left-4.png" /></div><div class="texts">住房货币化补贴查询</div><div class="bk"></div></a></li>
+           </ul>
+     
+         </div>
+         <div class="right-bar col-right">
+		       <div class="changeBox_a1" id="change_1">
+		
+					[@cms_content_list channelId='10633' orderBy='3'  titLen='20' descLen='40' append='...' channelOption='1' dateFormat='yyyy-MM-dd']
+                    [#list tag_list as a]
+                       <a href="${a.url}" target=_blank title="${a.title}" class="a_bigImg"><img src="${a.titleImg!site.defImg}" width="730" height="287"/></a>
+                    [/#list]
+                    [/@cms_content_list]
+					 
+				
+		      </div>
+		 </div>
+         <div class="bk"></div>
+     </div>
+     <div class="bk20"></div>
+     
+     
+    
+     <div class="box">
+	     <div class="picbox col-left">
+               <div class="flash-title"></div>
+		       <div class="flashbox">
+			        <div class="flash">
+					 [@cms_content_list siteId='6103' typeId='3' styleList='3-1' titLen='20' count='5' flashWidth='298' flashHeight='169' textHeight='20' channelOption='1' tpl='2'/]
+
+					</div>
+			   </div><!--flashbox-->
+               
+         </div><!--picbox-->
+			   <div class="announcement list col-left">
+			      <div class="title-news">
+                     <ul><li style="width:78px;"><a href="javascript:void(0);"  hideFocus class="hold">工作动态</a>&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+                         <!--<li style="width:120px;"><a href="javascript:void(0);" hideFocus>招标公告</a></li>-->
+                    </ul>
+                  </div>
+                  
+                  <div class="my-news" style="display:block">
+                       [@cms_channel id='8218']
+                        <a href="${tag_bean.url}" class="more-2">>>更多</a>
+                       [/@cms_channel]
+                        <div class="bk"></div>
+                        <ul class="ico-1">
+				   [@cms_content_list channelId='8218' orderBy='4' count='6' titLen='20' descLen='40' append='...' channelOption='1' dateFormat='yyyy-MM-dd']
+                    [#list tag_list as a]
+                        <li><span class="rt">[${a.date?string(dateFormat)}]</span><a href="${a.url}" target=_blank>[@text_cut s=a.title len=titLen append=append/]</a></li>
+                    [/#list]
+            [/@cms_content_list]
+					 
+					 </ul>
+                  
+                  </div>
+                  
+                  <div class="my-news">
+                  [@cms_channel id='8223']
+                   <a href="${tag_bean.url}" class="more-2">>>更多</a>
+                   [/@cms_channel]
+                    <div class="bk"></div>
+                   <ul class="ico-1">
+					[@cms_content_list channelId='8223' orderBy='4' count='6' titLen='20' descLen='40' append='...' channelOption='1' dateFormat='yyyy-MM-dd']
+                    [#list tag_list as a]
+                        <li><span class="rt">[${a.date?string(dateFormat)}]</span><a href="${a.url}" target=_blank>[@text_cut s=a.title len=titLen append=append/]</a></li>
+                    [/#list]
+                    [/@cms_content_list]
+					 
+					 </ul>
+                  
+                  </div>
+                  
+                  
+			   </div><!--announcement-->
+               
+               <div class="zhao-box  list col-right">
+               <div class="zhao-title">
+               <div class="zhao-title-1"><b>通知公告</b>&nbsp;&nbsp;</div>
+               [@cms_channel id='8221']
+                   <a href="${tag_bean.url}" class="more">更多</a>&nbsp;&nbsp;
+                   [/@cms_channel]
+                   <div class="bk"></div>
+              </div>
+              
+              <ul class="ico-1" style="padding-top:4px;">
+				   [@cms_content_list channelId='8221' orderBy='4' count='6' titLen='16' descLen='40' append='...' channelOption='1' dateFormat='yyyy-MM-dd']
+                    [#list tag_list as a]
+                        <li><span class="rt">[${a.date?string(dateFormat)}]</span><a href="${a.url}" target=_blank>[@text_cut s=a.title len=titLen append=append/]</a></li>
+                    [/#list]
+            [/@cms_content_list]
+					 
+					 </ul>
+         </div>
+
+	<!--box-->	
+	 <div class="bk"></div>
+	 </div>
+	 <!--div class="bk20"></div-->
+  
+</div><!--/main/-->
+<div class="bk10"></div>
+[#include "../include/页脚.html"/]
+</body>
+</html>
+<script language="javascript">
+$(function(){
+    $('#change_1 .a_bigImg').soChange();
+	$("div.title-news a").click(function(){
+		
+		$("div.title-news a").removeClass("hold");
+		$(this).addClass("hold");
+	    $(".my-news").hide();
+		var index = $("div.title-news a").index($(this));
+		$(".my-news:eq("+index+")").show();
+		});
+	
+    $(".left-bar-2 ul li a").hover(function(){
+	$(".left-bar-2 ul li a").removeClass("left-bar-on");
+	$(this).addClass("left-bar-on");
+	
+	},function(){})
+
+})
+</script>
