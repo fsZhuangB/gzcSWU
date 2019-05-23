@@ -1,0 +1,144 @@
+/* CSS Document */
+
+/*bodytop*/
+
+.body-top,.header,.header .logo{}
+.body-top{ background:url(../images/top-bc.jpg) repeat-x}
+.body-top .top-bar{ height:28px; background:#B40001; color:#FFFFFF;width:1061px; margin:0 auto;  line-height:28px;  text-indent:62px;}
+ .link-table{ width:240px; float:right; text-align:left}
+ .link-table table td select{padding:1px; line-height:16px; margin:2px 4px 0 0; border:1px solid #C0D9DD;}
+.body-top .ad1{}
+.body-top .nav-bar{ background:#F63D05 url(../images/logo.jpg) 57px 0px no-repeat; height:48px; width:1061px; margin:0 auto; margin-top:1px; padding-top:30px;}
+.body-top .nav-bar ul{ width:700px; float:right; }
+.body-top .nav-bar li{ float:left; height:43px; width:114px;}
+.body-top .nav-bar li a{ display:block; width:100%; line-height:14px; font-size:16px; padding:14px 0 15px 0; text-align:center; color:#FFFFFF;  border-left:1px solid #FBB49E;}
+.body-top .nav-bar li a:hover{ background:url(../images/navs-on.png) repeat-x; text-decoration:none; }
+
+
+.main { width:1061px; margin:0 auto; padding:0 0 15px 0; background:#FFF;}
+.main .left-bar-2{ width:282px; margin-left:10px; margin-top:16px;}
+.main .left-bar-2 ul li{ margin-bottom:10px; }
+.main .left-bar-2 ul li a{ display:block; width:252px; padding:18px 20px 8px 10px; height:34px; line-height:1.0; text-align:right; background:url(../images/left-bar-1.jpg) no-repeat;}
+.main .left-bar-2 ul li a:hover,.main .left-bar-2 ul li a.left-bar-on{background:url(../images/left-bar-1-on.jpg) top right no-repeat; }
+.main .left-bar-2 ul li a div.icos{ float:left;  text-align:right}
+.main .left-bar-2 ul li a div.texts{ float:left; text-align:left; width:160px; padding-left:10px; cursor:hand; padding-top:9px;}
+
+.main .right-bar{ width:730px; height:287px; overflow:hidden;}
+.main .right-bar .changeBox_a1{
+float:left;
+width:730px; height:287px; 
+position:relative;
+ }
+
+.main .right-bar .changeBox_a1 .a_bigImg{
+position:absolute;
+top:0px;left:0px;
+display:none;}
+
+
+.main .box{ position:relative;  width:1041px; padding: 0 10px 0 10px;  }
+.main .box .picbox{ padding:2px; width:315px;}
+.main .box .picbox .flash-title{ background:url(../images/flash-title.jpg) no-repeat; height:21px;}
+.main .box .picbox .flashbox{ height:216px; width:340px; float:left; background:#FFFFFF url(../images/picbox.jpg) repeat-x;padding-top:8px;}
+.main .box .picbox .flashbox .flash{}
+
+
+.box .announcement{ width:360px;  background:url(../images/newstitle.jpg) 0 20px no-repeat;}
+.box .announcement .title-news{ width:320px;  position:absolute;  top:-4px; left:330px;  *left:330px!important; *left:360px;}
+.box .announcement .title-news li { width:140px; float:left}
+.box .announcement .title-news li a{ font-weight:bold}
+.box .announcement .title-news li a:hover,.box .announcement .title-news li a.hold{ color:#F33E05}
+.box .announcement .title-news li a span{ font-weight:normal}
+.box .announcement .my-news { display:none;}
+
+.box .announcement .my-news .more-2{ float:right}
+.box .announcement .my-news ul{ padding-top:10px;}
+
+.box .zhao-box{ width:315px;}
+.box .zhao-box .zhao-title{ width:100%; background:url(../images/newstitle.jpg) 0 18px no-repeat;  color:#F33E05 ; height:26px;}
+.box .zhao-box .zhao-title .more{ float:right; }
+
+.box .zhao-box .zhao-title .zhao-title-1{ width:160px; float:left}
+
+.box .title{ background:url(../images/title-bc.jpg) repeat-x; height:28px; padding:0 4px 0 8px;}
+.box .title-nobc{  background:none;}
+.box .title div{  float:left}
+.box .title a{ float:right; line-height:28px; color:#E48D00}
+.box .title .title-1{ background:url(../images/title-1.jpg) no-repeat; width:96px; height:28px;}
+.box .title .title-2{ background:url(../images/title-2.jpg) no-repeat; width:104px; height:28px;}
+.box .title .title-3{ background:url(../images/title-3.jpg) no-repeat;  width:104px; height:28px;}
+.box .list{ padding:2px; }
+.box .list ul li{ line-height:31px;}
+.box .list ul.ico-1{ }
+.box .list ul.ico-1 li{ background:url(../images/ico-1.jpg) 4px 12px no-repeat; text-indent:16px;}
+
+.box .list ul.ico-2{ width:338px; margin:0 auto}
+.box .list ul.ico-2 li{ background:url(../images/ico-1.jpg) 4px 14px no-repeat;text-indent:16px;}
+
+.box .list ul.ico-3{ width:340px; margin:0 auto}
+.box .list ul.ico-3 li{ background:url(../images/ico-2.jpg) 4px 10px no-repeat;text-indent:22px;}
+
+
+
+
+
+
+.foot{width:1061px; margin:0 auto; background:url(../images/foot.jpg) repeat-x; height:38px; text-align:center; color:#000000; padding-top:10px;}
+.foot p{}
+
+.main .content{ width:1061px; margin:0 auto}
+.main .content .content-top{ background:url(../images/ad3.jpg) no-repeat; width:1041px; height:246px; margin:10px auto}
+.main .content .box{  }
+.main .content .c-text{ width:953px; margin:0 auto;}
+.main .content .c-text .title{ border-bottom:1px solid #FBA75E; height:27px; line-height:27px;}
+
+.main .content .c-text .title .c-title{ width:200px; float:left; background:url(../images/ico-3.jpg) 0 4px no-repeat; text-indent:12px; color:#000000; font-size:14px; font-weight:bold;}
+
+.main .content .c-text .title .dqwz{ width:180px; float:right;}
+.main .content .c-text ul{ padding-top:10px;}
+.main .content .c-text ul li{line-height:28px; border-bottom:1px dashed #B4B4B4;}
+.main .content .c-text ul li.u-title{ background:none; border:none}
+.main .content .c-text ul li.u-title .u-t{ width:120px; float:left; text-indent:12px;}
+.main .content .c-text ul li .u-time{ width:120px; float:right; text-align:center; padding-right:22px;}
+.main .content .c-text ul li a{ width:700px; float:left; background:url(../images/ico-4.jpg) 12px 11px no-repeat ; text-indent:22px; }
+
+.main .content .r-text ul{ padding-top:10px;}
+.main .content .r-text ul li{line-height:28px; border-bottom:1px dashed #B4B4B4;}
+.main .content .r-text ul li.u-title{ border-bottom:1px solid #D3D3D3;}
+.main .content .r-text ul li.u-title .u-t{ width:120px; float:left; text-indent:12px;}
+.main .content .r-text ul li .u-time{ width:120px; float:right; text-align:center; padding-right:22px;}
+.main .content .r-text ul li a{ width:660px; float:left; background:url(../images/ico-4.jpg) 12px 11px no-repeat ; text-indent:22px;}
+
+
+.main .content .content-bottom{ background:url(../images/content-bottom.jpg) no-repeat; height:8px;}
+
+
+
+/*单页*/
+.main .left-nav{ width:200px;}
+.main .left-nav h3{ display:block; background:url(../images/left-bar-on.gif) no-repeat; height:32px; color:#FFFFFF; padding:8px 20px 0 0px; text-align:right;}
+.main .left-nav h3 span.s1{ display:block; font-size:14px; font-weight:bold; line-height:1.1;}
+.main .left-nav h3 span.s2{ display:block; font-size:11px; font-weight:normal; line-height:1;}
+.main .left-nav ul li{ background:#FBEACC; line-height:36px; text-align:right; font-size:14px; padding:0px 0px 10px 0; font-weight:bold;}
+.main .left-nav ul li ul{ display:none; background:#FBE5C0; }
+.main .left-nav ul li ul li{ background:none; text-align:left; text-indent:80px; line-height:24px; font-size:12px; padding:0; font-weight:normal; }
+.main .left-nav ul li ul li a{ color:#5c5c5c}
+.main .left-nav ul li ul li.action a{ color:#BF5025;}
+.main .left-nav ul li ul li.action ul li a{color:#5c5c5c;}
+.main .left-nav ul li.action a{ color:#803E24;}
+
+
+.main .r-text{ float:right; width:820px;}
+.main .r-text p{ text-indent:24px; padding:5px 0 5px 0;}
+.titles{border-bottom:1px solid #FBA75E; height:27px; line-height:27px;}
+.titles .c-title{ width:200px; float:left; background:url(../images/ico-3.jpg) 0 4px no-repeat; text-indent:12px; color:#000000; font-size:14px; font-weight:bold;}
+.titles .dqwz{ width:380px; float:right; text-align:right}
+
+/*功用*/
+.title-info .title-text{ text-align:center; font-weight:bold; font-size:14px; line-height:40px; border:1px solid #FFFFFF;}
+.title-info .title-disp{ line-height:24px; text-align:center; border-bottom:1px dashed #DCDCDC; background:#F6F6F6;}
+.c-text P{text-indent:24px; padding:5px 0 5px 0;}
+
+
+.renyuantable{ margin:10px auto; padding:5px; border:1px solid #FBA75E; border-right:none; border-bottom:none;}
+.renyuantable td{ border-right:1px solid #FBA75E; border-bottom:1px solid #FBA75E; padding:10px; text-align:center}

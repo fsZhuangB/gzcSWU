@@ -1,0 +1,83 @@
+<script src="/${res}/js/showtime.js" type="text/javascript"></script>
+
+<SCRIPT type="text/javascript">
+$(function(){
+$.getJSON("http://cms.swu.edu.cn:8080/viscms/site_statistics.jspx?callback=?",{siteId:${site.id}},function(json){
+  if(json.success){
+  var num = parseInt(json.countSite)+20;
+ $("#ss2").html(num);
+ }
+
+});
+
+});
+
+  function get_url(){
+   var obj=document.getElementById("page_url");
+   if(obj.options[obj.selectedIndex].value!=0){
+    window.open(obj.options[obj.selectedIndex].value);
+   }
+   
+  }
+
+
+</script>
+
+<div class="body-top">
+     <div class="top-bar">
+
+	    
+		   
+	     
+          
+              <form action="http://cms.swu.edu.cn:8080/viscms/search.jspx" target="_blank" class="searchBox">
+<input name="q" value="${q!'请输入关键词'}" type="text" id="stxt" onfocus="if(this.value=='请输入关键词')this.value=''" onblur="if(this.value=='')this.value='请输入关键词'" maxlength="24" >
+<input type="hidden" name="siteId" value="${site.id}"/>
+<span id="fid_box">
+<select name="channelId" id="stxt2">
+<option value="" >所有信息</option>
+[@cms_channel_list]
+[#list tag_list as c]
+<option value="${c.id}">${c.name}</option>
+[/#list]
+[/@cms_channel_list]
+</select>
+</span>
+<input type="submit" id="btnSearch" value=""/>
+<input type="hidden" name="st" value=""/>
+</form>
+
+<div class="link-table">
+		    <table cellpadding="0" cellspacing="0">
+			<tr>
+             
+               <td>友情链接&nbsp;<select style="width:120px; overflow:hidden" id="page_url" onchange="get_url()">
+			   <option value="0">==快速链接==</option>
+			[@cms_friendlink_list siteId=site.id]
+          [#list tag_list as link]
+		  <option value="${link.domain}" >${link.name}</option>
+     <!--<li><a href="${link.domain}" onclick="$.get('${base}/friendlink_view.jspx?id=${link.id}')" target="_blank">${link.name}</a></li>-->
+  [/#list]
+  [/@cms_friendlink_list]
+			   
+			   
+			   </select></td>
+             </tr>
+			</table>
+			</div>
+      <div class="bk"></div>
+	 </div><!--top-bar-->
+	 <div class="ad1"></div>
+	 <div class="nav-bar">
+	           <ul>
+               [@cms_channel_list]
+                  <LI><A href="${base}/" hideFocus style="border-left:none;">首页</A></LI>
+                  [#list tag_list as c]
+                  <LI[@cms_channel_list parentId=c.id][#if tag_list?size>0][/#if][/@cms_channel_list]><A href="${c.url}" target="_self" hideFocus>${c.name}</A>
+	              </LI>
+                  [/#list]
+                [/@cms_channel_list]
+	            </ul>
+	 </div>
+
+</div><!--/body-top/-->
